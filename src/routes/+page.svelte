@@ -3,10 +3,24 @@
 
 <style lang="scss">
 
-    
 
     h1{
         color : red;
         font-size: functions.toRem(60);
+
+        @include breakpoint.up('lg'){
+            color: blue;
+        }
+
+
+        @include breakpoint.down('lg'){
+            color: blue;
+        }
+
+
+        @include breakpoint.down('md'){
+            color: green;
+        }
+        
     }
 </style>
